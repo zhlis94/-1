@@ -1,0 +1,18 @@
+{
+"appID" : 'xxxxxxxxxxxxxxxxxx',
+"appsecret" : 'xxxxxxxxxxxxxxxxxx',
+# 关注的成员ID
+"user_id" : ['xxxxxxxxxxxxxxxxxx'],
+# 模板ID
+"template_id" : 'xxxxxxxxxxxxxxxxxx', 
+# 所在地
+"city" : '杭州',
+# 秘钥key
+"joke_key" : 'xxxxxxxxxxxxxxxxxx',  # 鸡汤秘钥
+"weather_key" : 'xxxxxxxxxxxxxxxxxx',  # 天气秘钥
+
+# 生日(暂不支持农历)
+"birthday" : '2022-08-25',
+# 恋爱开始日
+"love_day" : '2022-08-25',
+}

@@ -1,84 +1,27 @@
-# -0 python_ose 开源版本
+# 01 自动化定时发送
 
-> python_ose 开源版本上线，具体请看 api --> py_ose.md
+> 注：这是电脑端定时，要保证电脑不能关机。
 >
-> 注：功能比exe版本更为丰富
+> 并且我的是windows系统，此教程以windows系统为例。
 
 
 
-# -1 相关配置
+![](https://gitee.com/qishen-1/wxgzh/raw/master/Automatically_send/img/1.png)
 
-> 注：exe程序如果出现闪退情况，是因为没有搭载 python3 环境 --> 环境搭载教程具体请看 py3_ins_environment.md
+![](https://gitee.com/qishen-1/wxgzh/raw/master/Automatically_send/img/2.png)
 
-## 第一步：注册测试号
+在选择每天定时发送前，我们不妨可以先勾选一次，看是否能按时发送
 
-> 网址:  https://mp.weixin.qq.com/
+> 温馨提示：可以设置一个比较近的时间进行测试哦，比如五分钟后
 
-![1](https://gitee.com/qishen-1/wxgzh/raw/master/img/1.png)
+![](https://gitee.com/qishen-1/wxgzh/raw/master/Automatically_send/img/3.png)
 
-![2](https://gitee.com/qishen-1/wxgzh/raw/master/img/2.png)
+这里非常重要，如果只写了第三步的程序路径，那么将会弹出终端窗口上面显示`与config.txt不在同一路径`，所以为了解决这一问题，我们就可以在第4步的位置加入此exe之前的路径，就是粉色红框框里面的内容。
 
-![3](https://gitee.com/qishen-1/wxgzh/raw/master/img/3.png)
+![](https://gitee.com/qishen-1/wxgzh/raw/master/Automatically_send/img/4.png)
 
-![4](https://gitee.com/qishen-1/wxgzh/raw/master/img/4.png)
+![](https://gitee.com/qishen-1/wxgzh/raw/master/Automatically_send/img/5.png)
 
-![5](https://gitee.com/qishen-1/wxgzh/raw/master/img/5.png)
+一切完成之后，等着时间到就好啦。
 
-![6](https://gitee.com/qishen-1/wxgzh/raw/master/img/6.png)
-
-![7](https://gitee.com/qishen-1/wxgzh/raw/master/img/7.png)
-
-## 第二步：登陆刚注册的公众号
-
-![8](https://gitee.com/qishen-1/wxgzh/raw/master/img/8.png)
-
-![9](https://gitee.com/qishen-1/wxgzh/raw/master/img/9.png)
-
-### 第三步：登陆测试号
-
-> 注：如果exe中报`access_token`错误，就刷新此页面，重新填`id`和`serect`就行
-
-![10](https://gitee.com/qishen-1/wxgzh/raw/master/img/10.png)
-
-![11](https://gitee.com/qishen-1/wxgzh/raw/master/img/11.png)
-
-![12](https://gitee.com/qishen-1/wxgzh/raw/master/img/12.png)
-
-![13](https://gitee.com/qishen-1/wxgzh/raw/master/img/13.png)
-
-
-
-# -2 修改config配置信息
-
-> 下载下来后，打开对应的文件夹
-
-如何下载？
-
-![](https://gitee.com/qishen-1/wxgzh/raw/master/img/15.png)
-
-![](https://gitee.com/qishen-1/wxgzh/raw/master/img/16.png)
-
-找到这个config文件
-
-![image-20220822131738651](https://gitee.com/qishen-1/wxgzh/raw/master/img/17.png)
-
-打开修改
-
-![14](https://gitee.com/qishen-1/wxgzh/raw/master/img/14.png)
-
-# -3 运行exe
-
-> 双击运行exe程序
-
-![image-20220822131855242](https://gitee.com/qishen-1/wxgzh/raw/master/img/18.png)
-
-# -4 报错信息
-
-1. 如果出现闪退，请看 `-0`注释；
-
-2. 如果出现`access_token`错误，请看`-1 第三步`注释；
-
-3. 如果出现错误信息是`推送消息失败，请检查config.txt文件是否与程序位于统一路径`，请将`config`和`exe`放在同一个文件夹内；
-4. 如果出现错误信息是`推送消息失败，请检查模板id是否正确`，请仔细检查模板id 复制时是不是多了个空格或者少了数据；
-5. 如果出现错误信息是`推送消息失败，请检查微信号是否正确`，请仔细检查微信号 是否显示在测试号中；
-6. 生日数据前面步骤有误，请将生日对应的模板从 `{{birth_day.DATA}}`改成`{{birthday.DATA}}`
+> 不出意外，你将会在五分钟后收到信息。
